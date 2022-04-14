@@ -3,7 +3,10 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: 'static',
+  target: 'static', // 정적 웹사이트임을 명시
+  router: {
+    base: '/blog/' // github repository 이름 넣기
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
