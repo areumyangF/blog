@@ -100,7 +100,66 @@ export default {
       article,
       tags,
       prev,
-      next
+      next,
+      meta: {
+        title: article.title,
+        description: article.description,
+        ogimg: article.img
+      }
+    }
+  },
+
+  data() {
+    return {
+      meta: {
+        url: 'https://finiview.com/ModalPage',
+      }
+    }
+  },
+  // TODO :: seo 를 위한 page 별 head 설정
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        {
+          hid: 'description', // nuxt 의 hid 라는 유니크한 식별자를 통해 meta 태그를 덮어 씌어준다.
+          name: 'description',
+          content: this.meta.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'modal, slot, v-slot'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.meta.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.meta.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.meta.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          // content: 'http://placeimg.com/640/480/fashion'
+          content: this.meta.ogimg
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.meta.url
+        }
+      ]
     }
   },
   methods: {
