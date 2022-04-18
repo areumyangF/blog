@@ -44,3 +44,8 @@ This is some more info
 
 ## This is another heading
 This is some more info
+
+### html을 이용한 이미지 추가
+<div>
+  <img src="/pikicast1186117392.jpg" alt="">
+</div>

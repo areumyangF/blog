@@ -5,7 +5,7 @@ export default {
    */
   target: 'static', // 정적 웹사이트임을 명시
   router: {
-    base: '/blog/' // github repository 이름 넣기
+    // base: '/blog/' // github repository 이름 넣기
   },
   /*
    ** Headers of the page
