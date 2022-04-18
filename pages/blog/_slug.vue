@@ -104,7 +104,8 @@ export default {
       meta: {
         title: article.title,
         description: article.description,
-        ogimg: article.img
+        ogimg: article.img,
+        keyword: article.tags
       }
     }
   },
@@ -129,7 +130,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content: 'modal, slot, v-slot'
+          content: this.meta.keyword
         },
         {
           hid: 'og:title',
@@ -140,11 +141,6 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: this.meta.description
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: this.meta.url
         },
         {
           hid: 'og:image',
