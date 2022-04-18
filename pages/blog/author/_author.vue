@@ -51,6 +51,7 @@
             >
               <h2 class="font-bold">{{ article.title }}</h2>
               <p>{{ article.description }}</p>
+              <br />
               <p class="font-bold text-gray-600 text-sm">
                 {{ formatDate(article.updatedAt) }}
               </p>
@@ -81,7 +82,7 @@ export default {
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
+      return new Date(date).toLocaleDateString('ko', options)
     }
   }
 }
