@@ -1,18 +1,19 @@
 ---
-title: My First Blog Post
-description: Learning how to use @nuxt/content to create a blog
+title: localhost MD로 블로그 글쓰기
+description: localhost 글쓰기라 login 관리가 필요없다... 하지만 md 문법을 알아야한다.
 img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
 alt: my first blog post
 author: 
-  name: Peter
-  bio: All about Peter and what he does and where he works
+  name: 김태성
+  bio: finiview server Team publisher
   img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 tags: 
   - nuxtjs
   - javascript
+  - mdx
 ---
 
-Welcome to my first blog post using content module
+글쓰기는 ide에서 직접 작성할 수도 있으며, dev를 실행시켜 프론트화면에서 직접 작성 할 수도 있다. 하지만 새 글을 작성하기 위해서는 새로운 md파일을 작성하기 때문에 결국 ide를 사용하는 것이 가장 효율적이다.
 
 ## This is a heading
 This is some more info
