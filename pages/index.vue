@@ -2,7 +2,7 @@
   <div class="m-8">
     <TheHeader />
 
-    <h1 class="font-bold text-4xl">Blog Posts</h1>
+    <h1 class="font-bold text-4xl">finiview Blog Posts</h1>
     <ul class="flex flex-wrap">
       <li
         v-for="article of articles"
@@ -50,11 +50,7 @@
     <footer class="flex justify-center border-gray-500 border-t-2">
       <p class="mt-4">
         Created by
-        <a
-          href="https://twitter.com/debs_obrien"
-          class="font-bold hover:underline"
-          >Debbie O'Brien</a
-        >
+        <b>finiview</b>
         at NuxtJS. See the
         <a
           href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
