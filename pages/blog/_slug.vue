@@ -113,11 +113,11 @@ export default {
   data() {
     return {
       meta: {
-        url: 'https://finiview.com/ModalPage',
+        url: 'https://finiview.com/ModalPage'
       }
     }
   },
-  // TODO :: seo 를 위한 page 별 head 설정
+  // ODO :: seo 를 위한 page 별 head 설정
   head() {
     return {
       title: this.meta.title,
