@@ -12,5 +12,13 @@
 }
 
 :root {
+    /* navbar */
+    --nav-index: 50;
+    --navbar-height: 60px;
+
+    /* button */
     --btn-font-size-m: 15px;
+
+    /* color */
+    --white: #fff;
   }

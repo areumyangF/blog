@@ -1,18 +1,21 @@
 <template>
   <div>
+    <NavBar/>
     <FirstWrap/>
     <SecondWrap/>
   </div>
 </template>
 
 <script>
+import NavBar from "@/components/Landing/NavBar";
 import FirstWrap from "@/components/Landing/FirstWrap";
 import SecondWrap from "@/components/Landing/SecondWrap";
 export default {
   name: "index",
   components:{
     FirstWrap,
-    SecondWrap
+    SecondWrap,
+    NavBar
   }
 }
 </script>
@@ -28,7 +31,7 @@ video {
   width: 100%;
   height: 100%;
 }
-button {
+button, ul, li {
   outline: 0;
   border: 0;
   cursor: pointer;
