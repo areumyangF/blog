@@ -1,27 +1,27 @@
 <template>
-  <FirstWrap>
-  </FirstWrap>
+  <div>
+    <FirstWrap/>
+    <SecondWrap/>
+  </div>
 </template>
 
 <script>
 import FirstWrap from "@/components/Landing/FirstWrap";
+import SecondWrap from "@/components/Landing/SecondWrap";
 export default {
   name: "index",
   components:{
-    FirstWrap
+    FirstWrap,
+    SecondWrap
   }
 }
 </script>
 
 <style>
-@font-face {
-  font-family: 'SpoqaHanSansNeo-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-h1 {
-  font-family: SpoqaHanSansNeo-Regular, Arial, Verdana, Tahoma, sans-serif;;
+@import "@/assets/css/font.css";
+
+body {
+  font-family: HallymGothic-Regular, Arial, Verdana, Tahoma, sans-serif;
 }
 video {
   object-fit: cover;
@@ -31,15 +31,24 @@ video {
 button {
   outline: 0;
   border: 0;
+  cursor: pointer;
 }
-.link-button {
-  background-color: var(--token-tds-color-grey-opacity-800, var(--adaptiveOpacity800, rgba(0, 12, 30, 0.8)));
-  color: white;
-  padding: 10px 20px 10px 17px;
+.main-button {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  margin: 1px 0 0;
+  white-space: nowrap;
+  font-size: var(--btn-font-size-l);
+}
+
+.wrapper {
+  position: relative;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6, span, p, div {
+    word-break: keep-all;
+    white-space: pre-wrap;
 }
 </style>

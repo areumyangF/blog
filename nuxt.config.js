@@ -91,8 +91,28 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/i18n'
   ],
+  i18n: {
+    defaultLocale: 'ko',
+    locales: [
+      {
+        code: 'ko',
+        iso: 'ko-KR',
+        file: 'ko.json'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.json'
+      }
+    ],
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'ko'
+    } 
+  },
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
