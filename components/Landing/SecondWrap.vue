@@ -1,19 +1,21 @@
 <template>
-    <div class="wrapper">
-        <p class="detail">{{ $t('main.detail') }}</p>
-    </div>
+  <div class="main-wrapper">
+    <p class="detail">{{ $t('main.detail') }}</p>
+  </div>
 </template>
 
 <style scoped>
-
-.wrapper {
-  padding: 200px 0;
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .detail {
-text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.8;
-    color: #191f28;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #191f28;
 }
 </style>

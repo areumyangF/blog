@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <NavBar/>
-    <FirstWrap/>
-    <SecondWrap/>
+  <div class="main-container">
+    <NavBar />
+    <FirstWrap />
+    <SecondWrap />
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/Landing/NavBar";
-import FirstWrap from "@/components/Landing/FirstWrap";
-import SecondWrap from "@/components/Landing/SecondWrap";
+import NavBar from '@/components/Landing/NavBar'
+import FirstWrap from '@/components/Landing/FirstWrap'
+import SecondWrap from '@/components/Landing/SecondWrap'
 export default {
-  name: "index",
-  components:{
+  name: 'index',
+  components: {
     FirstWrap,
     SecondWrap,
     NavBar
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-@import "@/assets/css/font.css";
+@import '@/assets/css/font.css';
 
 body {
   font-family: HallymGothic-Regular, Arial, Verdana, Tahoma, sans-serif;
@@ -31,7 +31,9 @@ video {
   width: 100%;
   height: 100%;
 }
-button, ul, li {
+button,
+ul,
+li {
   outline: 0;
   border: 0;
   cursor: pointer;
@@ -46,12 +48,27 @@ button, ul, li {
   font-size: var(--btn-font-size-l);
 }
 
-.wrapper {
-  position: relative;
-    width: 100%;
+.main-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
-h1, h2, h3, h4, h5, h6, span, p, div {
-    word-break: keep-all;
-    white-space: pre-wrap;
+.main-wrapper {
+  position: relative;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  word-break: keep-all;
+  white-space: pre-wrap;
 }
 </style>

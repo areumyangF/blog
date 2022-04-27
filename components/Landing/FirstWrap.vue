@@ -1,31 +1,35 @@
 <template>
-    <div class="wrapper">
-      <video muted playsinline autoplay>
-        <source src="@/assets/video/toss-im-web-intro.mp4" type="video/mp4" />
-      </video>
+  <div class="main-wrapper">
+    <video muted playsinline autoplay>
+      <source src="@/assets/video/toss-im-web-intro.mp4" type="video/mp4" />
+    </video>
 
-      <div class="gradient"></div>
-      <div class="content-wrapper">
-        <div class="content-sub-wrapper">
-          <h1>{{ $t('main.title') }}</h1>
-          <div class="button-wrapper">
-            <button class="link-button main-button">
-              <img src="https://static.toss.im/png-icons/timeline/applekorea.png" />
-              App Store
-            </button>
+    <div class="gradient"></div>
+    <div class="content-wrapper">
+      <div class="content-sub-wrapper">
+        <h1>{{ $t('main.title') }}</h1>
+        <div class="button-wrapper">
+          <button class="link-button main-button">
+            <img
+              src="https://static.toss.im/png-icons/timeline/applekorea.png"
+            />
+            App Store
+          </button>
 
-            <button class="link-button main-button">
-              <img src="https://static.toss.im/png-icons/timeline/googleplay.png" />
-              Google Play
-            </button>
-          </div>
+          <button class="link-button main-button">
+            <img
+              src="https://static.toss.im/png-icons/timeline/googleplay.png"
+            />
+            Google Play
+          </button>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <style scoped>
-.wrapper {
+.main-wrapper {
   height: 100vh;
 }
 .gradient {
@@ -34,7 +38,12 @@
   left: 0;
   width: 100%;
   height: 500px;
-  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    white 59px,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .content-wrapper {
   position: absolute;
@@ -68,7 +77,10 @@
   line-height: 1.4;
 }
 .link-button {
-  background-color: var(--token-tds-color-grey-opacity-800, var(--adaptiveOpacity800, rgba(0, 12, 30, 0.8)));
+  background-color: var(
+    --token-tds-color-grey-opacity-800,
+    var(--adaptiveOpacity800, rgba(0, 12, 30, 0.8))
+  );
   color: white;
   font-weight: 600;
   border-radius: 30px;
