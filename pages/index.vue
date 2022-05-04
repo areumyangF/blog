@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import NavBar from '@/components/Landing/NavBar'
+import NavBar from '@/components/Landing/Navbar'
 import FirstWrap from '@/components/Landing/FirstWrap'
 import SecondWrap from '@/components/Landing/SecondWrap'
 export default {
