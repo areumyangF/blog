@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import NavBar from '../components/Landing/Navbar.vue'
-import FirstWrap from '../components/Landing/FirstWrap'
-import SecondWrap from '../components/Landing/SecondWrap'
+import NavBar from '@/components/Landing/NavBar'
+import FirstWrap from '@/components/Landing/FirstWrap'
+import SecondWrap from '@/components/Landing/SecondWrap'
 export default {
   name: 'index',
   components: {
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-@import '../assets/css/font.css';
+@import '@/assets/css/font.css';
 
 body {
   font-family: HallymGothic-Regular, Arial, Verdana, Tahoma, sans-serif;

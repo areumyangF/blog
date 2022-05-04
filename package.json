@@ -13,10 +13,6 @@
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"
   },
-  "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint"
-  },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/i18n": "^7.2.1",
