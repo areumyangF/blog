@@ -49,13 +49,6 @@ export default {
           // content: 'http://placeimg.com/640/480/fashion'
           content: '/images/bg-studio.png'
         }
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: this.meta.url
-        }
       ]
     }
   }
