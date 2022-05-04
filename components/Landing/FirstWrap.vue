@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrapper">
     <video muted playsinline autoplay>
-      <source src="@/assets/video/toss-im-web-intro.mp4" type="video/mp4" />
+      <source src="../assets/video/toss-im-web-intro.mp4" type="video/mp4" />
     </video>
 
     <div class="gradient"></div>
