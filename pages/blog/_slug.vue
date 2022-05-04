@@ -22,7 +22,23 @@
         <span v-for="(tag, id) in article.tags" :key="id">
           <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
             <span
-              class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+              class="
+                truncate
+                uppercase
+                tracking-wider
+                font-medium
+                text-ss
+                px-2
+                py-1
+                rounded-full
+                mr-2
+                mb-2
+                border border-light-border
+                dark:border-dark-border
+                transition-colors
+                duration-300
+                ease-linear
+              "
             >
               {{ tags[tag].name }}
             </span>
@@ -46,7 +62,17 @@
       </div>
     </div>
     <div
-      class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
+      class="
+        relative
+        xs:py-8 xs:px-8
+        lg:py-32 lg:px-16 lg:w-1/2
+        xs:w-full
+        h-full
+        overflow-y-scroll
+        markdown-body
+        post-right
+        custom-scroll
+      "
     >
       <h1 class="font-bold text-4xl">{{ article.title }}</h1>
       <p>{{ article.description }}</p>
@@ -117,7 +143,7 @@ export default {
       }
     }
   },
-  // ODO :: seo 를 위한 page 별 head 설정
+  // TODO :: seo 를 위한 page 별 head 설정
   head() {
     return {
       title: this.meta.title,
