@@ -4,7 +4,7 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: 'static',
+  target: 'universal ',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -43,7 +43,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'http://placeimg.com/640/480/food'
+        content: 'https://finiview.com/images/index/main-fake-bg.png'
       },
       {
         property: 'og:image:width',
