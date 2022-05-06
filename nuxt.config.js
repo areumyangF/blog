@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -111,7 +112,7 @@ export default {
     langDir: 'locales/',
     vueI18n: {
       fallbackLocale: 'ko'
-    } 
+    }
   },
   /*
    ** Content module configuration
