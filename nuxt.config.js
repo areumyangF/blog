@@ -1,5 +1,5 @@
 export default {
-  // ssr: false,
+  ssr: true,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
