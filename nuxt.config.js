@@ -41,6 +41,16 @@ export default {
         content: 'website'
       },
       {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Blog 관리'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'adsfadfdsfa'
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
         content: 'https://finiview.com/images/index/main-fake-bg.png'
