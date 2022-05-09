@@ -1,10 +1,10 @@
 export default {
-  ssr: false,
+  // ssr: false,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: 'universal ',
+  target: 'static',
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
